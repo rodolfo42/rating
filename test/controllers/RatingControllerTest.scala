@@ -10,6 +10,6 @@ class RatingControllerSpec extends Specification {
     val result = controllers.RatingController.index()(FakeRequest())
     
     status(result) must equalTo(OK)
-    contentAsString(result) must contain("jquery")
+    contentAsString(result) must contain("ripple")
   }
 }
