@@ -7,9 +7,8 @@ import play.api.libs.functional.syntax._
 trait SpeaksJson {
     implicit val ratingWrites: Writes[Rating] = (
         (JsPath \ "developer").write[Developer] and
-        (JsPath \ "project").write[Project] and
         (JsPath \ "stars").write[Int]
-    )(unlift(Rating.unapply))
+    )(Rating.toJson _)
     
     implicit val developerWrites: Writes[Developer] = (
         (JsPath \ "id").writeNullable[Int] and
