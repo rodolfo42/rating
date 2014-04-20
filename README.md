@@ -14,4 +14,4 @@ $ cd spike-scala
 $ sbt test
 ```
 
-MIT Licensed
+MIT licensed
