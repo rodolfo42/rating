@@ -13,3 +13,5 @@ $ git clone git@github.com:rodolfo42/rating
 $ cd spike-scala
 $ sbt test
 ```
+
+MIT Licensed
