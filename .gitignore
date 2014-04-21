@@ -33,3 +33,4 @@ project/boot/
 
 
 project/*.sbt
+activator-sbt-echo-play-shim.sbt
