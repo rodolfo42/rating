@@ -1,21 +1,19 @@
 package model
 
-import org.scalatest._
+import org.scalatest.FunSuite
 
 class ModelSpec extends FunSuite {
 
     test("project rating should obey the stars given") {
         val john = Developer("John", "john@example.com")
-        val jquery = Project("jquery/jquery")
-        val rating = john rates jquery by 4
+        val mike = Developer("Mike", "mike@example.com")
+        val jquery = Project("jquery/jquery", 
+        	List(
+        		Rating(john, 3),
+        		Rating(mike, 5)
+        	)
+      	)
 
-        assert(rating.summary === "John rated jquery by 4 stars")
-    }
-    
-    test("projects should assume ratings as their own") {
-        val john = Developer("John", "john@example.com")
-        val jquery = Project("angular/angular.js", List(john rates 2))
-
-        assert(jquery.ratings.head.summary === "John rated angular.js by 2 stars")
+        assert(jquery.stars === 4.0d)
     }
 }
