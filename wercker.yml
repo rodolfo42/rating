@@ -2,5 +2,5 @@ box: pjvds/scala
 build:
   steps:
     - script:
-      name: SBT Test
-      code: sbt test
+        name: SBT Test
+        code: sbt test
