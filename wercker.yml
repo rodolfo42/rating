@@ -1,4 +1,6 @@
-box: ericfode/scala-sbt@0.0.82
+box: pjvds/scala
 build:
   steps:
-    - sbt-test
+    - script:
+      name: SBT Test
+      code: sbt test
