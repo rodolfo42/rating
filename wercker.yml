@@ -1,0 +1,4 @@
+box: ericfode/scala-sbt@0.0.82
+build:
+  steps:
+    - sbt-test
