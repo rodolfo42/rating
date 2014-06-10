@@ -1,6 +1,6 @@
 # Scala spike
 
-[![Build Status](https://travis-ci.org/rodolfo42/rating.svg?branch=master)](https://travis-ci.org/rodolfo42/rating)
+[![wercker status](https://app.wercker.com/status/9a661cc357a20cd3215bf2958d093b58/m "wercker status")](https://app.wercker.com/project/bykey/9a661cc357a20cd3215bf2958d093b58)
 
 This is a spike I'm doing to get up and running with a simple domain web app.
 
