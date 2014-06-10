@@ -1,5 +1,6 @@
 box: rodolfo42/scala-sbt
 build:
-  - script:
-      name: SBT test
-      code: sbt test
+  steps:
+    - script:
+        name: SBT test
+        code: sbt test
